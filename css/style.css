@@ -413,4 +413,128 @@ input{
     color: var(--skin-color);
 }
 /*----------------------------SKILLS SECTION---------------------*/
+.skills_container{
+    grid-template-columns: 320px 320px;
+    column-gap: 3rem;
+    justify-content: center;
+}
+.skills_header{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.skills_header:not(:last-child){
+    margin-bottom: var(--mb-2-5);
+}
+.skills_icon,
+.skills_arrow{
+    font-size: 2rem;
+    color: var(--skin-color );
+}
+.skills_icon{
+    margin-right: var(--mb-0-75);
+}
+.skills_title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-mediam);
+}
+.skills_subtitle{
+    font-size: var(--small-font-size);
+}
+.skills_arrow{
+margin-left: auto;
+}
+.skills_active .skills_arrow{
+    transform: rotate(-90deg);
+    transition: .3s;
+}
+.skills [data-content]{
+    display: none;
+}
+.skills_active[data-content]{
+    display: block;
+}
+.skills_list{
+    row-gap: 1.8rem;
+}
+.skills_titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+.skills_name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-mediam);
+}
+.skills_bar,
+.skills_percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+.skills_bar{
+    background-color: var(--box-color);
+}
+.skills_percentage{
+    display: block;
+    background-color: var(--skin-color);
+}
 /*----------------------------WORK SECTION---------------------*/
+.work_container{
+    grid-template-columns: repeat(3, 330px);
+    gap: 1.8rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.work_filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .75rem;
+    margin-bottom: 2rem;
+}
+.work_item{
+    cursor: pointer;
+    color: var(--tittle-color);
+    padding: .25rem .75rem;
+    font-weight: var(--font-medium);
+    border-radius: .5rem;
+}
+.work_card{
+    background-color: var(--box-color);
+    padding: 1.25rem;
+    border-radius: .5rem;
+}
+.work_img{
+    width: 400px;
+    height: 200px;
+    border-radius: .5rem;
+    margin-bottom: var(--mb-1);
+}
+.portfolio_item-details{
+    display: none;
+}
+.work_title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-5);
+}
+.work_button{
+    color: var(--skin-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
+.work_button-icon{
+    font-size: 1rem;
+    transition: .3s;
+}
+.work_button:hover .work_button-icon{
+    transform: translateX(.25rem );
+}
+/*------------------Active Item Work -----------*/
+.active-work{
+    background-color: var(--skin-color);
+    color: var(--tittle-color);
+}
